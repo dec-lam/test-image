@@ -54,7 +54,7 @@ def analyze_image():
         }
 
         response = requests.post(
-            "http://192.168.5.51:1234/v1/chat/completions",
+            "https://play-hahaha-zone.duckdns.org/v1/chat/completions",
             json=payload,
             headers={"Content-Type": "application/json"},
             timeout=60
