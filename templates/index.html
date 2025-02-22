@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Analysis with LLaVA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Food Analysis with LLaVA</h1>
+    <div class="upload-container">
+        <div class="upload-box">
+            <input type="file" id="imageInput" accept="image/*">
+            <button id="uploadButton" class="upload-button">Choose File</button>
+            <p>or drag and drop image here</p>
+            <img id="preview" alt="Image preview">
+        </div>
+        <div class="loader" id="loader"></div>
+        <div id="result"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
